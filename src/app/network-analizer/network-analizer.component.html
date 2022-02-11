@@ -1,0 +1,38 @@
+<div class="grid-container" class="match-parent">
+  <mat-grid-list cols="5" rowHeight="90vh" >
+    <mat-grid-tile colspan="1" rowspan="1" style="background-color: #00000099; margin-left: 20px; margin-top: 20px">
+      <button mat-fab color="primary" (click)="scan()">
+        <mat-icon>radar</mat-icon>
+      </button>
+    </mat-grid-tile>
+
+    <mat-grid-tile colspan="3" rowspan="1">
+      <mat-card class="dashboard-card mat-elevation-z0" style="background-color: #11111100;" >
+        <mat-card-content class="dashboard-card-content">
+          <div class="container_scanner" *ngIf="scanning">
+              <div class="radar">
+                <div class="grid"></div>
+                <div class="scanner"></div>
+<!--                <div class="target"></div>-->
+<!--                <div class="target"></div>-->
+<!--                <div class="target"></div>-->
+<!--                <div class="target"></div>-->
+<!--                <div class="target"></div>-->
+              </div>
+            </div>
+        </mat-card-content>
+      </mat-card>
+    </mat-grid-tile>
+
+<!--    <mat-grid-tile colspan="2" rowspan="1">-->
+<!--      <mat-card class="dashboard-card">-->
+<!--        <mat-card-content class="dashboard-card-content">-->
+<!--          <div>Card Content Here</div>-->
+<!--        </mat-card-content>-->
+<!--      </mat-card>-->
+<!--    </mat-grid-tile>-->
+
+
+
+  </mat-grid-list>
+</div>
